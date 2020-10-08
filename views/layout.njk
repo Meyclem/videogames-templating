@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    {% block css %}{% endblock %}
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li><a href="/games">Games</a></li>
+        <li><a href="/platforms">Platforms</a></li>
+      </ul>
+    </div>
+    {% block content %}{% endblock %}
+  </body>
+</html>

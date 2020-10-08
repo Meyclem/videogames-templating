@@ -1,0 +1,17 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <h1>Games</h1>
+  <ul>
+    {% for game in games %}
+      <li>
+        {% if game.cover.url %}
+          <img src="{{game.cover.thumbnail}}" alt="{{game.name}} cover">
+        {% else %}
+          <img src="/assets/images/no-cover.png" alt="{{game.name}} cover">
+        {% endif %}
+        <h3><a href="/games/{{game.slug}}">{{game.name}}</a></h3>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
