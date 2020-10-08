@@ -29,7 +29,10 @@ async function makeApp(db: Db): Promise<core.Express> {
   const platformModel = new PlatformModel(db.collection<Platform>("platforms"));
   const gameModel = new GameModel(db.collection<Game>("games"));
 
+  app.get("/", (_request, response) => response.render("home"));
+
   // GET platforms
+
   app.get("/platforms", platformsController.index(platformModel));
   // GET platforms/:slug
   app.get("/platforms/:slug", platformsController.show(platformModel));
@@ -38,28 +41,6 @@ async function makeApp(db: Db): Promise<core.Express> {
   app.get("/games", gamesController.index(gameModel));
   // GET platforms/:slug
   app.get("/games/:slug", gamesController.show(gameModel));
-
-  // GET platforms/:slug
-  // app.get("/platforms/:slug", async (request, response) => {
-  //   const platform = await platformsController.findBySlug(db, request.params.slug);
-
-  //   console.log(platform);
-
-  // if (platform) {
-  //   if (clientWantsJson(request)) {
-  //     response.json(platform);
-  //   } else {
-  //     response.render("platform", { platform });
-  //   }
-  // } else {
-  //   response.status(404);
-  //   if (clientWantsJson(request)) {
-  //     response.json({ error: "This platform does not exist." });
-  //   } else {
-  //     response.render("platform", { platform });
-  //   }
-  // }
-  // });
 
   app.get("/*", (request, response) => {
     if (clientWantsJson(request)) {
