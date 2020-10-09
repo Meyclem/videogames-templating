@@ -2,12 +2,12 @@ import { Db } from "mongodb";
 import * as core from "express-serve-static-core";
 import * as dotenv from "dotenv";
 import * as express from "express";
+import * as gamesController from "./controllers/games.controller";
 import * as nunjucks from "nunjucks";
 import * as platformsController from "./controllers/platforms.controller";
-import * as gamesController from "./controllers/games.controller";
+import GameModel, { Game } from "./models/gameModel";
 import initDb from "../utils/initDatabase";
 import PlatformModel, { Platform } from "./models/platformModel";
-import GameModel, { Game } from "./models/gameModel";
 
 dotenv.config();
 
@@ -20,19 +20,17 @@ nunjucks.configure("views", {
   express: app,
 });
 
-app.set("views", __dirname + "/views");
 app.set("view engine", "njk");
 
 const clientWantsJson = (request: express.Request): boolean => request.get("accept") === "application/json";
 
-async function makeApp(db: Db): Promise<core.Express> {
+function makeApp(db: Db): core.Express {
   const platformModel = new PlatformModel(db.collection<Platform>("platforms"));
   const gameModel = new GameModel(db.collection<Game>("games"));
 
   app.get("/", (_request, response) => response.render("home"));
 
   // GET platforms
-
   app.get("/platforms", platformsController.index(platformModel));
   // GET platforms/:slug
   app.get("/platforms/:slug", platformsController.show(platformModel));
@@ -55,7 +53,7 @@ async function makeApp(db: Db): Promise<core.Express> {
 
 initDb()
   .then(async (client) => {
-    const app = await makeApp(client.db());
+    const app = makeApp(client.db());
 
     app.listen(process.env.PORT, () => {
       console.log(`listen on http://localhost:${process.env.PORT}`);

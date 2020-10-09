@@ -1368,6 +1368,325 @@ const switchGames = [
   },
 ];
 
-const games = [...ps4Games, ...xBox360Games, ...switchGames];
+const games = [
+  ...ps4Games,
+  ...xBox360Games,
+  ...switchGames,
+  {
+    code: 121,
+    cover: {
+      thumbnail: "//images.igdb.com/igdb/image/upload/t_thumb/co2dx9.jpg",
+      url: "//images.igdb.com/igdb/image/upload/t_cover_small_2x/co2dx9.jpg",
+    },
+    first_release_date: 1321574400,
+    genres: [
+      {
+        name: "Fighting",
+        slug: "fighting",
+      },
+      {
+        name: "Simulator",
+        slug: "simulator",
+      },
+      {
+        name: "Adventure",
+        slug: "adventure",
+      },
+      {
+        name: "Arcade",
+        slug: "arcade",
+      },
+    ],
+    name: "Minecraft",
+    platforms: [130, 48, 12],
+    rating: 83.64409271674819,
+    rating_count: 938,
+    screenshots: [
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/sc8d2v.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/sc8d2w.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/sc8d2x.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/sc8d2y.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/sc8d2z.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/sc8d30.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/sc8d31.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/sc8d32.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/sc8d33.jpg",
+      },
+    ],
+    slug: "minecraft",
+    summary:
+      "Minecraft focuses on allowing the player to explore, interact with, and modify a dynamically-generated map made of one-cubic-meter-sized blocks. In addition to blocks, the environment features plants, mobs, and items. Some activities in the game include mining for ore, fighting hostile mobs, and crafting new blocks and tools by gathering various resources found in the game. The game's open-ended model allows players to create structures, creations, and artwork on various multiplayer servers or their single-player maps. Other features include redstone circuits for logic computations and remote actions, minecarts and tracks, and a mysterious underworld called the Nether. A designated but completely optional goal of the game is to travel to a dimension called the End, and defeat the ender dragon.",
+    total_rating: 84.00061778694555,
+    total_rating_count: 955,
+    url: "https://www.igdb.com/games/minecraft",
+  },
+  {
+    code: 1905,
+    cover: {
+      code: 112205,
+      thumbnail: "//images.igdb.com/igdb/image/upload/t_thumb/co2ekt.jpg",
+      url: "//images.igdb.com/igdb/image/upload/t_cover_small_2x/co2ekt.jpg",
+    },
+    first_release_date: 1500940800,
+    genres: [
+      {
+        name: "Shooter",
+        slug: "shooter",
+      },
+    ],
+    name: "Fortnite",
+    platforms: [48, 130],
+    rating: 68.4068114625345,
+    rating_count: 370,
+    screenshots: [
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/vqphwdpqcsk0yvo8sbhu.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/xxta3pauqxscx89ou887.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/fev4okgev4xmxdogdwdf.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/yrhcvy88atrfuhfshj2b.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/wklmdcc9vn93257yjg1c.jpg",
+      },
+    ],
+    slug: "fortnite",
+    summary:
+      'Fortnite is the living, action building game from the developer formerly known as Epic MegaGames. You and your friends will lead a group of Heroes to reclaim and rebuild a homeland that has been left empty by mysterious darkness only known as "the Storm". \n \nBand together online to build extravagant forts, find or build insane weapons and traps and protect your towns from the strange monsters that emerge during the Storm. In an action experience from the only company smart enough to attach chainsaws to guns, get out there to push back the Storm and save the world. And don\'t forget to loot all the things.',
+    total_rating: 75.50340573126725,
+    total_rating_count: 380,
+    url: "https://www.igdb.com/games/fortnite",
+  },
+  {
+    code: 8173,
+    cover: {
+      thumbnail: "//images.igdb.com/igdb/image/upload/t_thumb/co1rcb.jpg",
+      url: "//images.igdb.com/igdb/image/upload/t_cover_small_2x/co1rcb.jpg",
+    },
+    first_release_date: 1464048000,
+    genres: [
+      {
+        name: "Shooter",
+        slug: "shooter",
+      },
+      {
+        name: "Strategy",
+        slug: "strategy",
+      },
+    ],
+    name: "Overwatch",
+    platforms: [48, 130],
+    rating: 83.448376659299,
+    rating_count: 718,
+    screenshots: [
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/xcyoi025lvvwnnrdargv.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/qyardon47coclwtjfwwr.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/bpcshm1ryzyf4nwu0rkt.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/aq1xangaqzrlhgetcrop.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/ao0jpev6qtvqlftjlhv5.jpg",
+      },
+    ],
+    slug: "overwatch",
+    summary:
+      "In Overwatch, you control one of several heroes in competitive 6-person team shooting matches. Battle over objectives, take down the other team, and achieve victory. \n \nIn Overwatch, heroes do battle in diverse locations around the world. From the technological marvel of Numbani to the manufacturing powerhouse of Volskaya, each map has a unique layout and specific win conditions that your team must meet in order to secure victory.",
+    total_rating: 86.26585499631615,
+    total_rating_count: 748,
+    url: "https://www.igdb.com/games/overwatch",
+  },
+  {
+    code: 5601,
+    cover: {
+      thumbnail: "//images.igdb.com/igdb/image/upload/t_thumb/co1nc1.jpg",
+      url: "//images.igdb.com/igdb/image/upload/t_cover_small_2x/co1nc1.jpg",
+    },
+    first_release_date: 1453766400,
+    genres: [
+      {
+        name: "Puzzle",
+        slug: "puzzle",
+      },
+      {
+        name: "Adventure",
+        slug: "adventure",
+      },
+      {
+        name: "Indie",
+        slug: "indie",
+      },
+    ],
+    name: "The Witness",
+    platforms: [130, 48],
+    rating: 83.06284234967491,
+    rating_count: 270,
+    screenshots: [
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/styvbfgi3wldnbkn8ryw.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/m3f6mp4xqamxyfo03ee4.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/qybtpmtbu9acshapk8is.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/ixduabbobqdjnsini0od.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/fztajtk1l9o4st10tsrv.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/e8qytounfoctqic0d8pe.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/j7r0sayrtc1hhvtvgd1g.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/dny8nmqgpvm7ao2muywg.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/ca0hs7x59axchd9r9ptn.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/mrfbbzfjcbeonvqz1yzq.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/gmy55fao0ncliz7l6lrf.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/pt8uw2ofbiox6rk2bvtw.jpg",
+      },
+    ],
+    slug: "the-witness",
+    summary:
+      "The Witness is an exploration-puzzle game. The game is being developed by a small, independent team, a mix of full-timers and contractors.",
+    total_rating: 85.6980878415041,
+    total_rating_count: 284,
+    url: "https://www.igdb.com/games/the-witness",
+  },
+  {
+    code: 472,
+    cover: {
+      thumbnail: "//images.igdb.com/igdb/image/upload/t_thumb/co1tnw.jpg",
+      url: "//images.igdb.com/igdb/image/upload/t_cover_small_2x/co1tnw.jpg",
+    },
+    first_release_date: 1320969600,
+    genres: [
+      {
+        name: "Role-playing (RPG)",
+        slug: "role-playing-rpg",
+      },
+      {
+        name: "Adventure",
+        slug: "adventure",
+      },
+    ],
+    name: "The Elder Scrolls V: Skyrim",
+    platforms: [130, 48],
+    rating: 87.6912881674008,
+    rating_count: 2128,
+    screenshots: [
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/muv70yw3rds1cw8ymr5v.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/xzk2h41fiye7uwbhc6ub.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/urqw7ltwmhr39gkidsih.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/t0mus35qrgclafo1ql8k.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/x5bbaqvgbpaz4hzlfeqb.jpg",
+      },
+    ],
+    slug: "the-elder-scrolls-v-skyrim",
+    summary:
+      "The next chapter in the highly anticipated Elder Scrolls saga arrives from the makers of the 2006 and 2008 Games of the Year, Bethesda Game Studios. Skyrim reimagines and revolutionizes the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose.  \n \nPlay any type of character you can imagine, and do whatever you want; the legendary freedom of choice, storytelling, and adventure of The Elder Scrolls is realized like never before.  \n \nSkyrim’s new game engine brings to life a complete virtual world with rolling clouds, rugged mountains, bustling cities, lush fields, and ancient dungeons.  \n \nChoose from hundreds of weapons, spells, and abilities. The new character system allows you to play any way you want and define yourself through your actions.  \n \nBattle ancient dragons like you’ve never seen. As Dragonborn, learn their secrets and harness their power for yourself.",
+    total_rating: 91.90119963925595,
+    total_rating_count: 2140,
+    url: "https://www.igdb.com/games/the-elder-scrolls-v-skyrim",
+  },
+  {
+    cover: {
+      thumbnail: "//images.igdb.com/igdb/image/upload/t_thumb/xrpmydnu9rpxvxfjkiu7.jpg",
+      url: "//images.igdb.com/igdb/image/upload/t_cover_small_2x/xrpmydnu9rpxvxfjkiu7.jpg",
+    },
+    first_release_date: 1456444800,
+    genres: [
+      {
+        name: "Role-playing (RPG)",
+        slug: "role-playing-rpg",
+      },
+      {
+        name: "Simulator",
+        slug: "simulator",
+      },
+      {
+        name: "Indie",
+        slug: "indie",
+      },
+    ],
+    name: "Stardew Valley",
+    platforms: [48, 130],
+    rating: 87.7805092386147,
+    rating_count: 543,
+    screenshots: [
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/rhxs1x9w5hf5kde2osf5.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/sw7rtba7p1xs77klsime.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/iwswpvxa9ytrpk8yjcyx.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/ak7zmag7zztpqha1jjde.jpg",
+      },
+      {
+        url: "//images.igdb.com/igdb/image/upload/t_screenshot_big/g1aakqbkp2quq0krqeky.jpg",
+      },
+    ],
+    slug: "stardew-valley",
+    summary:
+      "Stardew Valley is an open-ended country-life RPG! You’ve inherited your grandfather’s old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home? It won’t be easy. Ever since Joja Corporation came to town, the old ways of life have all but disappeared. The community center, once the town’s most vibrant hub of activity, now lies in shambles. But the valley seems full of opportunity. With a little dedication, you might just be the one to restore Stardew Valley to greatness!",
+    total_rating: 89.1594853885381,
+    total_rating_count: 560,
+    url: "https://www.igdb.com/games/stardew-valley",
+  },
+];
 
 export default games;
