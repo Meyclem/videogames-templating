@@ -4,18 +4,40 @@
   <title>GD: Games</title>
 {% endblock %}
 
+{% block css %}
+  <link rel="stylesheet" href="/assets/styles/games.css">
+{% endblock %}
+
 {% block content %}
   <h1>Games</h1>
-  <ul>
+  <ul class="games-list">
     {% for game in games %}
-      <li>
-        {% if game.cover.url %}
-          <img src="{{game.cover.thumbnail}}" alt="{{game.name}} cover">
-        {% else %}
-          <img src="/assets/images/no-cover.png" alt="{{game.name}} cover">
-        {% endif %}
-        <h3><a href="/games/{{game.slug}}">{{game.name}}</a></h3>
+      
+      <li class="game-item">
+        <a href="/games/{{game.slug}}">
+          <div class="rating-block">
+            <div class="rating">
+              <div class="rating--bar" style="height:{{game.total_rating}}px;"></div>
+            </div>
+          </div>
+
+          {% if game.cover.url %}
+            <img src="{{game.cover.thumbnail}}" alt="{{game.name}} cover">
+          {% else %}
+            <img src="/assets/images/no-cover.png" alt="{{game.name}} cover">
+          {% endif %}
+          <div class="game-item--body">
+            <h3>{{game.name}}</h3>
+            <div class="game-genres">
+              <h4>Genres:</h4>
+              {% for genre in game.genres %}
+                <p>{{genre.name}}</p>
+              {% endfor %}
+            </div>
+          </div>
+        </a>
       </li>
+      
     {% endfor %}
   </ul>
 {% endblock %}
