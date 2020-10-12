@@ -21,6 +21,8 @@ export function show(gameModel: GameModel) {
       if (clientWantsJson(request)) {
         response.json(game);
       } else {
+        game.first_release_date = new Date((game.first_release_date as number) * 1000);
+        console.log(game);
         response.render("game", { game });
       }
     } else {
