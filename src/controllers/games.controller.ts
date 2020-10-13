@@ -9,7 +9,7 @@ export function index(gameModel: GameModel) {
     if (clientWantsJson(request)) {
       response.json(games);
     } else {
-      response.render("games", { games });
+      response.render("games/index", { games });
     }
   };
 }
@@ -23,14 +23,14 @@ export function show(gameModel: GameModel) {
       } else {
         game.first_release_date = new Date((game.first_release_date as number) * 1000);
         console.log(game);
-        response.render("game", { game });
+        response.render("games/show", { game });
       }
     } else {
       response.status(404);
       if (clientWantsJson(request)) {
         response.json({ error: "This game does not exist." });
       } else {
-        response.render("game", { game });
+        response.render("game/show", { game });
       }
     }
   };

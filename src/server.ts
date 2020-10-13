@@ -28,7 +28,7 @@ function makeApp(db: Db): core.Express {
   const platformModel = new PlatformModel(db.collection<Platform>("platforms"));
   const gameModel = new GameModel(db.collection<Game>("games"));
 
-  app.get("/", (_request, response) => response.render("home"));
+  app.get("/", (_request, response) => response.render("pages/home"));
 
   // GET platforms
   app.get("/platforms", platformsController.index(platformModel));
@@ -44,7 +44,7 @@ function makeApp(db: Db): core.Express {
     if (clientWantsJson(request)) {
       response.status(404).json({ error: "Not Found" });
     } else {
-      response.status(404).render("not-found");
+      response.status(404).render("pages/not-found");
     }
   });
 
