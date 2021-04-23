@@ -20,7 +20,7 @@ nunjucks.configure("views", {
   express: app,
 });
 
-app.set("views", __dirname + "/views");
+app.set("views", "views");
 app.set("view engine", "njk");
 
 const clientWantsJson = (request: express.Request): boolean => request.get("accept") === "application/json";

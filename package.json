@@ -4,8 +4,10 @@
   "main": "index.ts",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon",
+    "dev": "nodemon",
     "test": "eslint --ext .js,.ts . && jest",
+    "build": "tsc",
+    "start": "node ./build/src/server.js",
     "db:seed": "ts-node commands/db.seed.ts",
     "db:drop": "ts-node commands/db.drop.ts",
     "db:reset": "yarn db:drop && yarn db:seed"
