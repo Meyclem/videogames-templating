@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon",
+    "build": "tsc",
     "test": "eslint --ext .js,.ts . && jest",
     "db:seed": "ts-node commands/db.seed.ts",
     "db:drop": "ts-node commands/db.drop.ts",
